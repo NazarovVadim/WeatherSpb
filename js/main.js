@@ -15,7 +15,6 @@ async function getData(){
     let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?id=498817&appid=e163b8b661bc14e09841495637e2ba12`);
     if(response.ok){
         let jsonData = await response.json();
-        console.log(jsonData);
         return jsonData;
     } else{
         alert('Error: '+ response.status);
