@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+}
+
+html[data-theme="day"] .weather,
+.weather {
+  background: -webkit-gradient(linear, left bottom, left top, from(#3593bf), to(rgba(255, 255, 255, 0))), #53a6cb;
+  background: linear-gradient(360deg, #3593bf 0%, rgba(255, 255, 255, 0) 100%), #53a6cb;
+}
+
+html[data-theme="night"] .weather {
+  background: -webkit-gradient(linear, left bottom, left top, from(#55707e), to(rgba(255, 255, 255, 0))), #042232;
+  background: linear-gradient(360deg, #55707e 0%, rgba(255, 255, 255, 0) 100%), #042232;
+}
+
+html.transition,
+html.transition * {
+  -webkit-transition: all 2000ms !important;
+  transition: all 2000ms !important;
+  -webkit-transition-delay: 0 !important;
+          transition-delay: 0 !important;
+}
+
+.weather {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.weather__inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.current {
+  text-align: center;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.current__city {
+  font-size: 3em;
+}
+
+.current__desc {
+  font-size: 1.5em;
+}
+
+.current__temp {
+  font-size: 4em;
+}
+
+.forecast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5em;
+}
+
+.forecast__item {
+  text-align: center;
+}
+
+.forecast__time, .forecast__icon {
+  margin-bottom: 1em;
+}
+
+.forecast__icon {
+  width: 50px;
+  height: 50px;
+}
+
+.forecast__temp {
+  font-size: 1.5em;
+}
+
+.detalis__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.detalis__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.detalis__name {
+  margin-bottom: 1em;
+}
+
+.detalis__value {
+  font-size: 1.5em;
+}
+
+.icon__01d,
+.icon__01n,
+.icon__02d,
+.icon__02n,
+.icon__03d,
+.icon__03n,
+.icon__04d,
+.icon__04n,
+.icon__09d,
+.icon__09n,
+.icon__10d,
+.icon__10n,
+.icon__11d,
+.icon__11n,
+.icon__13d,
+.icon__13n,
+.icon__14d,
+.icon__14n {
+  background-size: 50px;
+  background-repeat: no-repeat;
+}
+
+.icon__01d,
+.icon__01n {
+  background-image: url(../img/clear.svg);
+}
+
+.icon__02d,
+.icon__02n {
+  background-image: url(../img/cloud.svg);
+}
+
+.icon__03d,
+.icon__03n {
+  background-image: url(../img/cloudy.svg);
+}
+
+.icon__04d,
+.icon__04n {
+  background-image: url(../img/cloud.svg);
+}
+
+.icon__09d,
+.icon__09n {
+  background-image: url(../img/thunderstorm.svg);
+}
+
+.icon__10d,
+.icon__10n {
+  background-image: url(../img/rain.svg);
+}
+
+.icon__11d,
+.icon__11n {
+  background-image: url(../img/snow.svg);
+}
+/*# sourceMappingURL=style.css.map */
